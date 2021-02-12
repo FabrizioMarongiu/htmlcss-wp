@@ -29,6 +29,14 @@ div.clearfix::after{
     clear: both;
 }
 
+.background{ 
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
 /* Header */
 header .logo-header img{
     width: 160px;
@@ -53,16 +61,10 @@ nav li a{
 }
 
 /* Main */
-section.main-top{
-    background: rgba(0, 0, 0, 0.2);
-    height:500px;
-    width: 1170px;
-    border-radius: 8px;
-}
 
 
-div.background{
-    background-color: rgb(187, 187, 39);
+
+div.main-top{
     background-image: url("./img/banner.jpg");
     background-size: cover;
     background-position: center;
@@ -70,36 +72,66 @@ div.background{
     width: 1170px;
     margin-bottom: 40px;
     border-radius: 8px;
+}
+
+
+
+section.background{
+    padding-top: 300px;
+    padding-left: 80px;
+    padding-right: 570px;
+}
 
     
 section.main-bottom{
-    background-color: rgb(41, 116, 201);
+    /* background-color: rgb(41, 116, 201); */
     
 }
 
 
 div.title{
-    background-color: #aacee5;
+    
     width: 100%;
     height: 100px; /*fake height*/
     margin-bottom: 10px;
+    color: #8b8b8b;
+}
+
+div.small-image{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Insert left image */
+aside.left-content div.small-image{
+    background-image: url(./img/img-1.jpg);
+}
+
+/* Insert righit image */
+aside.right-content div.small-image{
+    background-image: url(./img/img-2.jpg);
 }
 
 aside.left-content,
 aside.right-content{
-    background-color: #aacee5;
     width: 25%;
-    height: 475px; /*fake height*/
+    /* height: 475px;  */
     margin-bottom: 10px;
     float: left;
+    border-radius: 8px;
 }
+
 
 article.middle-content{
     background-color: #aacee5;
     width: 48%;
-    height: 475px; /*fake height*/
+    /* height: 475px;  */
     margin: 0 1%;
     float: left;
+    border-radius: 8px;
 }
 
 
