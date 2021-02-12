@@ -6,6 +6,11 @@
 
 /* Utilities */
 
+.container{
+    width: 1170px;
+    margin: 10px  auto 20px;
+}
+
 div.clearfix::after{
     content: '';
     display: table;
@@ -16,19 +21,23 @@ div.clearfix::after{
 header{
     background-color: pink;
     height: 100px;
-    margin: 10px 60px 10px 60px;
+}
+
+header .logo-header img{
+    width: 160px;
+    
 }
 
 /* Main */
 section.main-top{
     background-color: rgb(187, 187, 39);
     height: 300px;
-    margin: 10px 60px 10px 60px;
+    margin-bottom: 10px;
 }
 
 section.main-bottom{
     background-color: rgb(41, 116, 201);
-    margin: 10px 60px 10px 60px;
+    
 }
 
 
@@ -61,5 +70,5 @@ article.middle-content{
 footer{
     background-color: purple;
     height: 60px; /*fake height*/
-    margin: 10px 60px 10px 60px;
+    
 }
